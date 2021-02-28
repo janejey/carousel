@@ -15,6 +15,10 @@
   margin-left: -26px;
   margin-top: 45px;
 }
+.play:hover, .pause:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
