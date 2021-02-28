@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+<div class="container">
+  <div class="mySlides">
+    <img src="https://i.pinimg.com/originals/54/a0/8f/54a08f440ac87229c787c4a7d4d7c2e1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://wallpaperaccess.com/full/284466.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://images.wallpaperscraft.com/image/lake_mountains_forest_152659_1920x1080.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="nextAndPreviousSlide(-1)">&#10094;</a>
+  <a class="next" onclick="nextAndPreviousSlide(1)">&#10095;</a>
+</div>
+<div id="playpause">
+	<img class="play" src="play.png">
+	<img class="pause" src="pause.png">
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</body>
+<script type="text/javascript" src="gallery.js"></script>
+</html>
