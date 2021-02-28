@@ -20,8 +20,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-// function playAndPause {play, pause} {
-//   let play = document.getElementsByClassName("play");
-//   let pause = document.getElementsByClassName("pause");
-//   if () {}
-// }
+function autoPlaySlider(){
+  nextAndPreviousSlide(1);
+}
+let sliderInterval;
+function autoPlayPause(action) {
+  if(action === "play") {
+    if(sliderInterval) {
+      clearInterval(sliderInterval);
+    }
+    sliderInterval = setInterval(autoPlaySlider, 1000);
+  }else if ("pause") {
+    clearInterval(sliderInterval);
+  }
+}
